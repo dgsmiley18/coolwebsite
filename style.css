@@ -10,9 +10,11 @@ body {
 
 #bannerimage {
     width: 100%;
-    background-image: url(images/Purifieur.jpg);
+    background-image: url(images/1648215850338.jpg);
     height: 300px;
     background-position: center;
+    background-size: cover;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
