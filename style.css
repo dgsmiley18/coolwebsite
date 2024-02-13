@@ -77,7 +77,7 @@ footer {
     margin: auto;
     margin-top: 50px;
     padding: 20px;
-    display: flex;
+    display: auto;
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 08px;
@@ -126,4 +126,19 @@ h3 {
 }
 #gallery {
     width: 500px;
+}
+#boxgallery {
+    border: #490202;
+    border-width: 5px;
+    border-style: solid;
+    border-spacing: 100px;
+    max-width: 1010px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 08px;
+
 }
