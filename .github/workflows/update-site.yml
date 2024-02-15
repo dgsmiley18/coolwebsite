@@ -1,35 +1,19 @@
-name: Update Site
+name: Deploy Cloudflare Worker
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      - name: Run Cloudflare Worker
-        run: curl -X POST -d '{}' SEU_ENDPOINT_DO_CLOUDFLARE_WORKER
-
-      - name: Generate file name
-        id: generateFileName
-        run: echo "::set-output name=filename::$(node generateFileName.js)"
-
-      - name: Create Markdown file
-        run: |
-          echo "# New Article" > "articles/${{ steps.generateFileName.outputs.filename }}.md"
-          echo "Content" >> "articles/${{ steps.generateFileName.outputs.filename }}.md"
-
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add articles/${{ steps.generateFileName.outputs.filename }}.md
-          git commit -m "Add new article"
-          git push
+    - name: Deploy to Cloudflare Worker
+      uses: cloudflare/wrangler-action@1.0.0
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
