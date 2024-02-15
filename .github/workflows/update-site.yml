@@ -16,5 +16,5 @@ jobs:
     - name: Deploy to Cloudflare Worker
       uses: cloudflare/wrangler-action@1.0.0
       with:
-        apiKey: ${{ secrets.CLOUDFLARE_API_KEY }}
+        apiKey: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         email: ${{ secrets.CLOUDFLARE_EMAIL }}
