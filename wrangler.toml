@@ -1,6 +1,0 @@
-name = "johnblog"
-type = "webpack"
-account_id = "af68b90d0d525bc992c618a7fc6d6425"
-workers_dev = true
-route = ""
-zone_id = "dff0929106a472f43f03369691909a56"
