@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnblog</title>
-    <link href="style.css" rel="stylesheet">
+    <title>{{ page.title }} - Johnblog</title>
+    <link href="{{ site.baseurl }}/assets/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,26 +12,20 @@
     </header>
     <nav id="crt">
         <div id="sidebar">
-            <a href="sobre.html">About</a>
-            <a href="index.html">Main</a>
-            <a href="livraria.html">Library</a>
+            <a href="{{ site.baseurl }}/">Main</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/museum">Museum</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
         </div>
     </nav>
-    <article>
-        <div id="boxgallery">
-            <img id="gallery" src="images/content/vladimir-motsar-1.jpg">
-            <img id="gallery" src="images/content/Fq_u92PaEAAETCZ.jpg">
-            <img id="gallery" src="images/content/wallpaper.jpg">
-            <img id="gallery" src="images/content/vladimir-motsar-2.jpeg">
-            <img id="gallery" src="images/content/vladimir-motsar-dsdasdas.jpeg">
-            <img id="gallery" src="images/content/vladimir-motsar-untitledssx-1dsd.jpeg">
-            <img id="gallery" src="images/content/vladimir-motsar-vladimir-motsar-1.jpeg">
-            <img id="gallery" src="images/content/vladimir-motsar-y888.jpeg">
+    <main>
+        <div id="library-content">
+            <h1>{{ page.title }}</h1>
+            <p>{{ content | markdownify }}</p>
         </div>
-    </article>
+    </main>
     <footer>
         <div id="footer">
-            <p>© 1998 - John</p>
             <a href="https://www.amd.com/en.html"><img src="https://rampancy.neocities.org/buttons/amd.gif" alt="AMD"></a>
             <a href="https://www.mozilla.org/en-US/firefox/browsers/"><img src="https://rampancy.neocities.org/buttons/button102.gif" alt="Firefox"></a>
             <a href="https://store.steampowered.com/app/2310/QUAKE/"><img src="https://rampancy.neocities.org/buttons/aniquake.gif" alt="QUAKE"></a>

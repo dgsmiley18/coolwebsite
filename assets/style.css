@@ -1,7 +1,11 @@
 /* Estilo geral */
-@font-face {
+/* @font-face {
     font-family: "AppleGaramond";
-    src: url("/fonts/AppleGaramond.ttf?#iefix") format("truetype");
+    src: url("../fonts/apple/AppleGaramond.ttf") format("truetype");
+} */
+@font-face {
+    font-family: "Verdana";
+    src: url("../fonts/verdana/Verdana.ttf") format("truetype");
 }
 
 body {
@@ -18,7 +22,7 @@ body {
     width: 50%;
     height: 10%;
     padding-top: 10%; /* Mantém a proporção 4:3 */
-    background-image: url(images/1648215850338.jpg);
+    background-image: url(../images/1648215850338.jpg);
     background-position: center;
     background-size: cover; /* Preenche o espaço */
     max-height: 200px;
