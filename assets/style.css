@@ -99,14 +99,48 @@ main {
 
 /* Links and Sidebar */
 #sidebar {
+    flex: 1;
     display: flex;
+    word-break: normal;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 40px;
     background-color: #270000;
     line-height: 35px;
-    margin: auto;
+}
+@media (max-width: 600px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+    }
+    #sidebar a {
+        text-align: center;
+        margin-right: 10px;
+    }
+    #box {
+        width: 100%;
+    }
+    #box h1 {
+        font-size: 1.5rem;
+    }
+    #box p {
+        font-size: 0.9rem;
+    }
+    #bannerimage {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+    #footer {
+        width: 100%;
+        height: auto;
+    }
 }
 
 a {
@@ -134,7 +168,6 @@ footer {
     color: white;
     text-align: center;
     width: 50%;
-
     max-height: 100px;
     margin:  auto; /* Centraliza horizontalmente */
 }
@@ -188,6 +221,7 @@ footer {
 
 #gallery {
     /* margin: auto; */
-    margin-inline: auto;
     width: 500px;
+    max-width: 100%; /* Ensure the image is responsive on smaller screens */
+    margin-inline: auto;
 }
