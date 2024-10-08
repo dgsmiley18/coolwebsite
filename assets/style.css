@@ -145,13 +145,14 @@ main {
 
 a {
     font-family: "AppleGaramond", sans-serif;
-    color: #ad0403;
+    color: rgb(235, 28, 28);
     font-size: 1.2rem;
     margin-right: 10px;
 }
 
 #crt #sidebar a:hover {
-    color: rgb(235, 28, 28);
+    /* color: rgb(235, 28, 28); */
+    color:orange;
 }
 
 /* Texto */
