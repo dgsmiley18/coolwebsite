@@ -22,7 +22,7 @@ body {
     width: 50%;
     height: 10%;
     padding-top: 10%; /* Mantém a proporção 4:3 */
-    background-image: url(../images/1648215850338.jpg);
+    background-image: url(../images/1648215850338.webp);
     background-position: center;
     background-size: cover; /* Preenche o espaço */
     max-height: 200px;
