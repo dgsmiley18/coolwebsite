@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /about/
+excerpt: "in this page i talk about myself"
 ---
 
 Yo, I'm John!

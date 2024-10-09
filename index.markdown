@@ -2,6 +2,7 @@
 layout: about
 title: homepage
 permalink: /
+excerpt: "Welcome to my cyberspace! this is where i talk about stuff"
 ---
 # Johnblog
 
