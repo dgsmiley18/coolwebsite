@@ -159,7 +159,6 @@ a {
 h1, p, address, h3 {
     font-family: "AppleGaramond", sans-serif;
     color: aliceblue; /* Texto claro */
-    text-align: left;
 }
 
 /* Footer */
