@@ -2,7 +2,7 @@
 layout: post
 title:  "Immortality"
 date:   2024-10-06 13:36:34 -0300
-categories: jekyll update
+categories: life
 ---
 Disgruntlomeister's Blogstasy, Episode 204
 
