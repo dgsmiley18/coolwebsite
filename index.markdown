@@ -17,7 +17,7 @@ excerpt: "Welcome to my cyberspace! this is where i talk about stuff"
   </div>
 </div>
 <div style="text-align: left;">
-  <h3 style="margin: 0;">Last posts</h3>
+  <h2 style="margin: 0;">Last posts</h2>
 </div>
 <hr color="red" style="margin: 0;">
 
