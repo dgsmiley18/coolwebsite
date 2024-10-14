@@ -7,7 +7,7 @@ excerpt: "in this page i talk about myself"
 
 Yo, I'm John!
 
-Currently i have no political position, i simply hate everything
+I'm Python developer and i like to play old games like Unreal Tournament, Doom and Diablo II
 
 you can always follow me in other places
 
