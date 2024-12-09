@@ -15,6 +15,8 @@ you can always follow me in other places
 
 
 ## Donations
-XMR: 445H2W1GKcRNmw5pJybu9F1YvbSzg3u5X92H86YM6J6YHVQK85Y5zHYRSHBQ5v4id8RyVH78L6MmvT7NWctEPhiLEULy3K7
+XMR: ``848ahJLSYoxDFz26w3ZoSJCWqiMktMFUhgjJz91hfPZGAgKsFnYA2g84wVJKv7u1o3d1F8jtCg2gaCtDpdUEsAHoLGwqwkd``
 
-BTC: bc1qjche246zsqw6t7vvstmvg4ynut8ygycjd2wpd3
+<img src="https://icons.veryicon.com/png/o/business/digital-currency/btc-1.png" alt="btc icon" width="50"/>BTC: ``bc1qj58ps8jz28st2n4p73c2cpe8z39kjy7sjnv467``
+
+<img src="https://files.catbox.moe/keygd5.png" alt="ltc icon" width="50"/> LTC: ``ltc1q5696dt5vdyp4f5pcfh3d38ukcdgmmw52asjec3``
