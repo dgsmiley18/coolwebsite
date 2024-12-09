@@ -8,8 +8,12 @@ excerpt: "Welcome to my cyberspace! this is where i talk about stuff"
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <div style="flex: 1; font-size: 1.1rem; text-align: left;">
-      Welcome to my comfy cyberspace, Currently the world is ending, people are working to separate people
-      and spread chaos and disorder, in this place i document what i can about life, tech, and other stuffs.
+
+    <p>Hello, my name is John and welcome to my blog!</p>
+
+<a href="{{ site.baseurl }}/donate" target="_blank"><img src="/images/litecoin-ltc-icon.webp" alt="ltc icon" width="50"/></a>
+<a href="{{ site.baseurl }}/donate" target="_blank"><img src="/images/btc_icon.webp" alt="btc icon" width="50"/></a>
+<a href="{{ site.baseurl }}/donate" target="_blank"><img src="/images/monero_icon.webp" alt="monero icon" width="50"/></a>
   </div>
   <div style="flex: 1; display: inline-block; text-align: right;">
       <p>Photo of the month</p>
