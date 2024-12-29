@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://johntitorr.xyz/</loc>
+  <lastmod>2024-12-29T15:29:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://johntitorr.xyz/about/</loc>
+  <lastmod>2024-12-29T15:29:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johntitorr.xyz/museum/</loc>
+  <lastmod>2024-12-29T15:29:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johntitorr.xyz/blog/</loc>
+  <lastmod>2024-12-29T15:29:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johntitorr.xyz/donate/</loc>
+  <lastmod>2024-12-29T15:29:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johntitorr.xyz/blog/2024/Archivism-is-the-future/</loc>
+  <lastmod>2024-12-29T15:29:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://johntitorr.xyz/blog/2024/Immortality/</loc>
+  <lastmod>2024-12-29T15:29:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
