@@ -12,16 +12,14 @@
     <link rel="manifest" href="/images/favicon/site.webmanifest">
     <link rel="preload" href="/images/1648215850338.webp" as="image" type="image/jpeg">
     <meta property="og:title" content="Archivism is the future" />
-    <meta property="og:description" content="Do you remember about that article or video that is gone from internet and you can’t find it even if you try? exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!
-" />
+    <meta property="og:description" content="Everything on internet is disappearing, make sure to save what you like!" />
     <meta property="og:image" content="https://johntitorr.me/images/favicon/android-chrome-512x512.png" />
-    <meta property="og:url" content="https://johntitorr.me//blog/2024/Archivism-is-the-future/" />
+    <meta property="og:url" content="https://johntitorr.xyz//blog/2024/Archivism-is-the-future/" />
     <meta property="og:type" content="website" />
     <meta name="title" content="Archivism is the future" />
-    <meta name="description" content="Do you remember about that article or video that is gone from internet and you can’t find it even if you try? exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!
-" />
+    <meta name="description" content="Everything on internet is disappearing, make sure to save what you like!" />
     <meta name="image" content="https://johntitorr.me/images/favicon/android-chrome-512x512.png" />
-    <meta name="url" content="https://johntitorr.me//blog/2024/Archivism-is-the-future/" />
+    <meta name="url" content="https://johntitorr.xyz//blog/2024/Archivism-is-the-future/" />
     <meta name="type" content="website" />
     <meta name="theme-color" content="#FF0000">
     <script type="application/ld+json">
@@ -29,8 +27,7 @@
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "Archivism is the future",
-            "description": "Do you remember about that article or video that is gone from internet and you can’t find it even if you try? exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!
-",
+            "description": "Everything on internet is disappearing, make sure to save what you like!",
             "datePublished": "2024-12-08",
             "dateModified": "",
             "author": {
@@ -47,7 +44,7 @@
             },
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://johntitorr.me//blog/2024/Archivism-is-the-future/"
+              "@id": "https://johntitorr.xyz//blog/2024/Archivism-is-the-future/"
             }
           }          
         </script>
@@ -68,12 +65,12 @@
     <main>
         <div id="library-content">
             <h1>Archivism is the future</h1>
-            <p><p>Do you remember about that article or video that is gone from internet and you can’t find it even if you try? exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!</p>
+            <p><p>Do you remember about that article or video that is gone from internet, and you can’t find it even if you try? Exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!</p>
 
-<p>It is actually easy and i gonna show you how i do.</p>
+<p>It is actually easy and I going to show you how I do.</p>
 
 <h1 id="videos">Videos</h1>
-<p>for videos i use <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, it works with any website that has a video</p>
+<p>for videos, I use <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, it works with any website that has a video</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># general</span>
 yt-dlp <span class="s2">"VIDEO_URL"</span>
 
@@ -83,14 +80,14 @@ yt-dlp <span class="nt">-f</span> bestaudio+bestvideo <span class="nt">-o</span>
 <span class="c"># only the audio (good for music)</span>
 yt-dlp <span class="nt">-x</span> <span class="nt">--audio-format</span> mp3 <span class="nt">--embed-thumbnail</span> <span class="nt">--add-metadata</span> <span class="s2">"VIDEO_URL"</span>
 </code></pre></div></div>
-<p>there are others cool commands for yt-dlp, i recommend to read the documentation <a href="https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options">here</a></p>
+<p>there are others cool commands for yt-dlp, I recommend reading the documentation <a href="https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options">here</a></p>
 
 <h1 id="imagesarts">Images/Arts</h1>
-<p>if you gonna download single images you can use <code class="language-plaintext highlighter-rouge">wget IMAGE_URL</code>
+<p>if you’re going to download single images you can use <code class="language-plaintext highlighter-rouge">wget IMAGE_URL</code>
 try downloading this image:
 <img src="https://files.catbox.moe/1a7im2.jpg" alt="drawing" width="250" /></p>
 
-<p>but if you want to download a lot of images from websites like twitter, pixiv, or danbooru you can use <a href="https://github.com/mikf/gallery-dl">gallery-dl</a></p>
+<p>but if you want to download a lot of images from websites like twitter, Pixiv, or Danbooru you can use <a href="https://github.com/mikf/gallery-dl">gallery-dl</a></p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># general (works with pictures and videos)</span>
 gallery-dl https://www.example.com/pictures
 
@@ -110,11 +107,11 @@ gallery-dl <span class="nt">--batch-file</span> links.txt
 <p>🌐 HTML/Any websites ➡️ <code class="language-plaintext highlighter-rouge">original HTML+CSS+JS, singlefile HTML, screenshot PNG, PDF, WARC, title, article text, favicon, headers</code><br />
 🎥 Social Media/News ➡️ <code class="language-plaintext highlighter-rouge">post content TXT, comments, title, author, images</code><br />
 🎬 YouTube/SoundCloud/etc. ➡️ <code class="language-plaintext highlighter-rouge">MP3/MP4s, subtitles, metadata, thumbnail</code><br />
-💾 Github/Gitlab/etc. links ➡️ <code class="language-plaintext highlighter-rouge">clone of GIT source code, README, images</code></p>
+💾 GitHub/GitLab/etc. links ➡️ <code class="language-plaintext highlighter-rouge">clone of GIT source code, README, images</code></p>
 
-<p>And there is more, after downloading the website you can upload the snapshot automaticaly to wayback machine!</p>
+<p>And there is more, after downloading the website you can upload the snapshot automatically to Wayback Machine!</p>
 
-<p>you can install it in your machine or use docker if you want, make sure to read the documentation because there is a lot of cool stuff</p>
+<p>You can install it in your machine or use docker if you want, make sure to read the documentation because there is a lot of cool stuff</p>
 </p>
         </div>
     </main>
