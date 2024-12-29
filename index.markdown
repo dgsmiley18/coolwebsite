@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: homepage
 title: homepage
 permalink: /
 excerpt: "Welcome to my cyberspace! this is where i talk about stuff"
