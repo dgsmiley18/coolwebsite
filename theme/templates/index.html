@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+    <h1>Johnblog</h1>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="flex: 1; font-size: 1.1rem; text-align: left;">
+
+        <p>Hello, my name is John and welcome to my blog!</p>
+
+        <a href="{{ SITEURL }}/donate/" target="_blank"><img src="{{ SITEURL }}/images/litecoin-ltc-icon.webp" alt="ltc icon" width="50"/></a>
+        <a href="{{ SITEURL }}/donate/" target="_blank"><img src="{{ SITEURL }}/images/btc_icon.webp" alt="btc icon" width="50"/></a>
+        <a href="{{ SITEURL }}/donate/" target="_blank"><img src="{{ SITEURL }}/images/monero_icon.webp" alt="monero icon" width="50"/></a>
+      </div>
+      <div style="flex: 1; display: inline-block; text-align: right;">
+          <p>Photo of the month</p>
+          <img src="{{ SITEURL }}/images/girl_knife.jpg" alt="a girl with knife" style="max-width: 40%; height: auto;">
+      </div>
+    </div>
+
+    <div style="text-align: left;">
+      <h2 style="margin: 0;">Last posts</h2>
+    </div>
+    <hr color="red" style="margin: 0;">
+
+    <ul>
+      {% for article in articles[:3] %}
+        <li style="flex: 1; text-align: left;">
+          {{ article.date.strftime('%B %d, %Y') }}  - <a href="{{ SITEURL }}{{ article.url }}">{{ article.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+{% endblock %}

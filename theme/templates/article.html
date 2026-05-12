@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.date.strftime('%B %d, %Y') }}{% if article.category %} - {{ article.category }}{% endif %}</p>
+    {{ article.content }}
+{% endblock %}

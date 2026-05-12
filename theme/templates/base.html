@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ SITENAME }}{% endblock %} - Johnblog</title>
+    <link href="{{ SITEURL }}/assets/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ SITEURL }}/images/favicon/site.webmanifest">
+    <meta name="theme-color" content="#FF0000">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <div id="bannerimage"></div>
+    </header>
+    <nav id="crt">
+        <div id="sidebar">
+            <a href="{{ SITEURL }}/">Main</a>
+            <a href="{{ SITEURL }}/about">About</a>
+            <a href="{{ SITEURL }}/museum">Museum</a>
+            <a href="{{ SITEURL }}/blog">Blog</a>
+        </div>
+    </nav>
+    <main>
+        <div id="library-content">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <a href="https://www.amd.com/en.html" target="_blank"><img src="{{ SITEURL }}/images/buttons/amd.gif" alt="AMD" width="88" height="31"></a>
+            <a href="https://www.mozilla.org/en-US/firefox/browsers/" target="_blank"><img src="{{ SITEURL }}/images/buttons/firefox.gif" alt="Firefox" width="88" height="31"></a>
+            <a href="https://store.steampowered.com/app/2310/QUAKE/" target="_blank"><img src="{{ SITEURL }}/images/buttons/aniquake.gif" alt="QUAKE" width="88" height="31"></a>
+            <img src="{{ SITEURL }}/images/buttons/mikubutton.gif" alt="Miku" width="88" height="31">
+            <img src="{{ SITEURL }}/images/buttons/blink.gif" alt="AnimeGirl" width="88" height="31">
+            <img src="{{ SITEURL }}/images/buttons/sailormoon.gif" alt="SailorMoon" width="88" height="31">
+            <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank"><img src="{{ SITEURL }}/images/buttons/agplv3.gif" alt="AGPL" width="88" height="31"></a>
+            <a href="https://discord.gg/ve78A98may" target="_blank"><img src="{{ SITEURL }}/images/buttons/discord.png" alt="Discord" width="88" height="31"></a>
+            <a href="https://archive.org/" target="_blank"><img src="{{ SITEURL }}/images/buttons/internetarchive.gif" alt="internetarchive" width="88" height="31"></a>
+        </div>
+    </footer>
+</body>
+</html>
