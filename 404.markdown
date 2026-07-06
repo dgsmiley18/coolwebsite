@@ -1,8 +1,0 @@
----
-permalink: /404.html
-title: 404
-layout: 404
-excerpt: "You did it! you found nothing!"
----
-<h1 style="text-align:center">404</h1>
-<img src="./images/404.jpg" width="900" height="600">
