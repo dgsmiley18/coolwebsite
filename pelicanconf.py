@@ -6,8 +6,8 @@ PATH = '.'
 TIMEZONE = 'America/Sao_Paulo'
 DEFAULT_LANG = 'en'
 
-PAGE_PATHS = ['content/pages']
-ARTICLE_PATHS = ['content/posts']
+PAGE_PATHS = ['pages']
+ARTICLE_PATHS = ['posts']
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
