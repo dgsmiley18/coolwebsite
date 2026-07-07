@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivism is the future - Johnblog</title>
+    <link href="/assets/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <meta name="theme-color" content="#FF0000">
+</head>
+<body>
+    <header>
+        <div id="bannerimage"></div>
+    </header>
+    <nav id="crt">
+        <div id="sidebar">
+            <a href="/">Main</a>
+            <a href="/about">About</a>
+            <a href="/museum">Museum</a>
+            <a href="/blog">Blog</a>
+        </div>
+    </nav>
+    <main>
+        <div id="library-content">
+    <h1>Archivism is the future</h1>
+    <p>December 08, 2024 - tech</p>
+    <p>Do you remember about that article or video that is gone from internet, and you can't find it even if you try? Exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!</p>
+<p>It is actually easy and I am going to show you how I do.</p>
+<h2>Videos</h2>
+<p>for videos, I use <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, it works with any website that has a video</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># general</span>
+yt-dlp<span class="w"> </span><span class="s2">&quot;VIDEO_URL&quot;</span>
+
+<span class="c1"># for playlist</span>
+yt-dlp<span class="w"> </span>-f<span class="w"> </span>bestaudio+bestvideo<span class="w"> </span>-o<span class="w"> </span><span class="s1">&#39;%(playlist_index)s - %(title)s.%(ext)s&#39;</span><span class="w"> </span><span class="s2">&quot;PLAYLIST_URL&quot;</span>
+
+<span class="c1"># only the audio (good for music)</span>
+yt-dlp<span class="w"> </span>-x<span class="w"> </span>--audio-format<span class="w"> </span>mp3<span class="w"> </span>--embed-thumbnail<span class="w"> </span>--add-metadata<span class="w"> </span><span class="s2">&quot;VIDEO_URL&quot;</span>
+</code></pre></div>
+
+<p>there are others cool commands for yt-dlp, I recommend reading the documentation <a href="https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options">here</a></p>
+<h2>Images/Arts</h2>
+<p>if you're going to download single images you can use <code>wget IMAGE_URL</code>
+try downloading this image:
+<img src="https://files.catbox.moe/1a7im2.jpg" alt="drawing" width="250"/></p>
+<p>but if you want to download a lot of images from websites like twitter, Pixiv, or Danbooru you can use <a href="https://github.com/mikf/gallery-dl">gallery-dl</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># general (works with pictures and videos)</span>
+gallery-dl<span class="w"> </span>https://www.example.com/pictures
+
+<span class="c1"># if you need to log in (example: twitter)</span>
+gallery-dl<span class="w"> </span>--username<span class="w"> </span>yourusername<span class="w"> </span>--password<span class="w"> </span>yourpassword<span class="w"> </span>https://www.example.com/gallery-url
+
+<span class="c1"># if you want to download images/videos from websites in a txt file</span>
+gallery-dl<span class="w"> </span>--batch-file<span class="w"> </span>links.txt
+</code></pre></div>
+
+<p>you can find more commands in the <a href="https://github.com/mikf/gallery-dl">documentation</a></p>
+<h2>Websites</h2>
+<p>There are simple ways to download a page, for single pages i recommend <a href="https://github.com/gildas-lormeau/SingleFile">Singlefile</a>, it's an extension for your browser where you can download a faithful copy of the entire page in a single HTML File.</p>
+<p>Now if you want the real deal, not only a page but the <strong>entire website</strong>, hosting your own wayback machine, you can use <a href="https://archivebox.io/">archivebox</a>, with this little boy you can save snapshots from your websites with a lot of formats</p>
+<p>🌐 HTML/Any websites ➡️ <code>original HTML+CSS+JS, singlefile HTML, screenshot PNG, PDF, WARC, title, article text, favicon, headers</code><br>
+🎥 Social Media/News ➡️ <code>post content TXT, comments, title, author, images</code><br>
+🎬 YouTube/SoundCloud/etc. ➡️ <code>MP3/MP4s, subtitles, metadata, thumbnail</code><br>
+💾 GitHub/GitLab/etc. links ➡️ <code>clone of GIT source code, README, images</code></p>
+<p>And there is more, after downloading the website you can upload the snapshot automatically to Wayback Machine!</p>
+<p>You can install it in your machine or use docker if you want, make sure to read the documentation because there is a lot of cool stuff</p>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <a href="https://www.amd.com/en.html" target="_blank"><img src="/images/buttons/amd.gif" alt="AMD" width="88" height="31"></a>
+            <a href="https://www.mozilla.org/en-US/firefox/browsers/" target="_blank"><img src="/images/buttons/firefox.gif" alt="Firefox" width="88" height="31"></a>
+            <a href="https://store.steampowered.com/app/2310/QUAKE/" target="_blank"><img src="/images/buttons/aniquake.gif" alt="QUAKE" width="88" height="31"></a>
+            <img src="/images/buttons/mikubutton.gif" alt="Miku" width="88" height="31">
+            <img src="/images/buttons/blink.gif" alt="AnimeGirl" width="88" height="31">
+            <img src="/images/buttons/sailormoon.gif" alt="SailorMoon" width="88" height="31">
+            <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank"><img src="/images/buttons/agplv3.gif" alt="AGPL" width="88" height="31"></a>
+            <a href="https://discord.gg/ve78A98may" target="_blank"><img src="/images/buttons/discord.png" alt="Discord" width="88" height="31"></a>
+            <a href="https://archive.org/" target="_blank"><img src="/images/buttons/internetarchive.gif" alt="internetarchive" width="88" height="31"></a>
+        </div>
+    </footer>
+</body>
+</html>
