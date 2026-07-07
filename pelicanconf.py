@@ -2,7 +2,7 @@ AUTHOR = 'John'
 SITENAME = 'homepage'
 SITEURL = ''
 
-PATH = '.'
+PATH = 'content'
 TIMEZONE = 'America/Sao_Paulo'
 DEFAULT_LANG = 'en'
 
