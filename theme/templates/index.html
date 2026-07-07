@@ -28,7 +28,7 @@
     <ul>
       {% for article in articles[:3] %}
         <li style="flex: 1; text-align: left;">
-          {{ article.date.strftime('%B %d, %Y') }}  - <a href="{{ SITEURL }}{{ article.url }}">{{ article.title }}</a>
+          {{ article.date.strftime('%B %d, %Y') }}  - <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
         </li>
       {% endfor %}
     </ul>
