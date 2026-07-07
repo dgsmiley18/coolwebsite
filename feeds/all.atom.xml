@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>homepage</title><link href="https://johntitorr.org/" rel="alternate"/><link href="https://johntitorr.org/feeds/all.atom.xml" rel="self"/><id>https://johntitorr.org/</id><updated>2024-12-08T20:02:34-03:00</updated><entry><title>Archivism is the future</title><link href="https://johntitorr.org/blog/2024/archivism-is-the-future/" rel="alternate"/><published>2024-12-08T20:02:34-03:00</published><updated>2024-12-08T20:02:34-03:00</updated><author><name>John</name></author><id>tag:johntitorr.org,2024-12-08:/blog/2024/archivism-is-the-future/</id><summary type="html">&lt;p&gt;Do you remember about that article or video that is gone from internet, and you can't find it even if you try? Exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Do you remember about that article or video that is gone from internet, and you can't find it even if you try? Exactly. Unfortunately niche things usually are not archived on archive.org, but there is a way to fix it, be the change you want to see and start to archive stuff!&lt;/p&gt;
+&lt;p&gt;It is actually easy and I am going to show you how I do.&lt;/p&gt;
+&lt;h2&gt;Videos&lt;/h2&gt;
+&lt;p&gt;for videos, I use &lt;a href="https://github.com/yt-dlp/yt-dlp"&gt;yt-dlp&lt;/a&gt;, it works with any website that has a video&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# general&lt;/span&gt;
+yt-dlp&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;VIDEO_URL&amp;quot;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# for playlist&lt;/span&gt;
+yt-dlp&lt;span class="w"&gt; &lt;/span&gt;-f&lt;span class="w"&gt; &lt;/span&gt;bestaudio+bestvideo&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;%(playlist_index)s - %(title)s.%(ext)s&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;PLAYLIST_URL&amp;quot;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# only the audio (good for music)&lt;/span&gt;
+yt-dlp&lt;span class="w"&gt; &lt;/span&gt;-x&lt;span class="w"&gt; &lt;/span&gt;--audio-format&lt;span class="w"&gt; &lt;/span&gt;mp3&lt;span class="w"&gt; &lt;/span&gt;--embed-thumbnail&lt;span class="w"&gt; &lt;/span&gt;--add-metadata&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;VIDEO_URL&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;there are others cool commands for yt-dlp, I recommend reading the documentation &lt;a href="https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Images/Arts&lt;/h2&gt;
+&lt;p&gt;if you're going to download single images you can use &lt;code&gt;wget IMAGE_URL&lt;/code&gt;
+try downloading this image:
+&lt;img src="https://files.catbox.moe/1a7im2.jpg" alt="drawing" width="250"/&gt;&lt;/p&gt;
+&lt;p&gt;but if you want to download a lot of images from websites like twitter, Pixiv, or Danbooru you can use &lt;a href="https://github.com/mikf/gallery-dl"&gt;gallery-dl&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# general (works with pictures and videos)&lt;/span&gt;
+gallery-dl&lt;span class="w"&gt; &lt;/span&gt;https://www.example.com/pictures
+
+&lt;span class="c1"&gt;# if you need to log in (example: twitter)&lt;/span&gt;
+gallery-dl&lt;span class="w"&gt; &lt;/span&gt;--username&lt;span class="w"&gt; &lt;/span&gt;yourusername&lt;span class="w"&gt; &lt;/span&gt;--password&lt;span class="w"&gt; &lt;/span&gt;yourpassword&lt;span class="w"&gt; &lt;/span&gt;https://www.example.com/gallery-url
+
+&lt;span class="c1"&gt;# if you want to download images/videos from websites in a txt file&lt;/span&gt;
+gallery-dl&lt;span class="w"&gt; &lt;/span&gt;--batch-file&lt;span class="w"&gt; &lt;/span&gt;links.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;you can find more commands in the &lt;a href="https://github.com/mikf/gallery-dl"&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Websites&lt;/h2&gt;
+&lt;p&gt;There are simple ways to download a page, for single pages i recommend &lt;a href="https://github.com/gildas-lormeau/SingleFile"&gt;Singlefile&lt;/a&gt;, it's an extension for your browser where you can download a faithful copy of the entire page in a single HTML File.&lt;/p&gt;
+&lt;p&gt;Now if you want the real deal, not only a page but the &lt;strong&gt;entire website&lt;/strong&gt;, hosting your own wayback machine, you can use &lt;a href="https://archivebox.io/"&gt;archivebox&lt;/a&gt;, with this little boy you can save snapshots from your websites with a lot of formats&lt;/p&gt;
+&lt;p&gt;🌐 HTML/Any websites ➡️ &lt;code&gt;original HTML+CSS+JS, singlefile HTML, screenshot PNG, PDF, WARC, title, article text, favicon, headers&lt;/code&gt;&lt;br&gt;
+🎥 Social Media/News ➡️ &lt;code&gt;post content TXT, comments, title, author, images&lt;/code&gt;&lt;br&gt;
+🎬 YouTube/SoundCloud/etc. ➡️ &lt;code&gt;MP3/MP4s, subtitles, metadata, thumbnail&lt;/code&gt;&lt;br&gt;
+💾 GitHub/GitLab/etc. links ➡️ &lt;code&gt;clone of GIT source code, README, images&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And there is more, after downloading the website you can upload the snapshot automatically to Wayback Machine!&lt;/p&gt;
+&lt;p&gt;You can install it in your machine or use docker if you want, make sure to read the documentation because there is a lot of cool stuff&lt;/p&gt;</content><category term="tech"/></entry><entry><title>Immortality</title><link href="https://johntitorr.org/blog/2024/immortality/" rel="alternate"/><published>2024-10-06T13:36:34-03:00</published><updated>2024-10-06T13:36:34-03:00</updated><author><name>John</name></author><id>tag:johntitorr.org,2024-10-06:/blog/2024/immortality/</id><summary type="html">&lt;p&gt;Disgruntlomeister's Blogstasy, Episode 204&lt;/p&gt;
+&lt;p&gt;I don't know about everybody else, but I'm afraid of dying. I don't see any reason to believe there's an afterlife. I'm an organism like any other: when my brain stops working, my consciousness will cease, and I will be gone. And you know what? I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Disgruntlomeister's Blogstasy, Episode 204&lt;/p&gt;
+&lt;p&gt;I don't know about everybody else, but I'm afraid of dying. I don't see any reason to believe there's an afterlife. I'm an organism like any other: when my brain stops working, my consciousness will cease, and I will be gone. And you know what? I can't just embrace that. I can't say I'm OK with it or I've accepted it or some nonsense like that. I don't want to have an ending. It terrifies me. If I had a genie right now, I'd wish for immortality. Who wouldn't? "Oh, but you wouldn't REALLY want to be immortal," the pseudo-philosophers say. Pretentious drivel! Everybody wants to live forever. Maybe everybody deserves to live forever, too.&lt;/p&gt;
+&lt;p&gt;But we can't, so here we are. Live with it.&lt;/p&gt;
+&lt;p&gt;Or rather, don't. &lt;/p&gt;</content><category term="life"/></entry></feed>
