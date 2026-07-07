@@ -1,7 +1,11 @@
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from pelicanconf import *
 
-# SITEURL = "https://johntitorr.xyz/"
-SITEURL = "localhost:8000"
+SITEURL = "https://johntitorr.org"
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"
