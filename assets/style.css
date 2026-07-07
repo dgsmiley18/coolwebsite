@@ -1,12 +1,12 @@
 /* Estilo geral */
 @font-face {
     font-family: "AppleGaramond";
-    src: url("./fonts/apple/AppleGaramond.ttf") format("truetype");
+    src: url("../fonts/apple/AppleGaramond.ttf") format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Verdana";
-    src: url("./fonts/verdana/Verdana.ttf") format("truetype");
+    src: url("../fonts/verdana/Verdana.ttf") format("truetype");
     font-display: swap;
 }
 
@@ -25,7 +25,7 @@ body {
     height: 10%;
     padding-top: 10%; /* Mantém a proporção 4:3 */
     /* background-image: url(../images/1648215850338.webp); */
-    background-image: url("./images/2500110-4k-amazing-wallpaper-hd.jpg");
+    background-image: url("../images/2500110-4k-amazing-wallpaper-hd.jpg");
     background-position: center;
     background-size: cover; /* Preenche o espaço */
     max-height: 200px;
